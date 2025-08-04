@@ -1,7 +1,7 @@
 const messages = [
-  "Bienvenue sur notre espace",
-  "Welcome to our space",
-  "I ni ce ye fɔ̀lɔ kɛla la"
+  "Bienvenu dans le centre des Super-Auto",
+  "Welcome to the Super Auto Center",
+  "I ni ce ye Super Auto kan nyɛ la"
 ];
 
 let index = 0;
