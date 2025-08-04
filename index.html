@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Auto de Bamako</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <ul>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#vehicules">Nos Véhicules</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+      </ul>
+      <div id="logo">
+        <img src="Images/logo.jpg" alt="Logo Super Auto" />
+      </div>
+      <ol>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </header>
+
+    <section id="hero">
+      <div id="sideimg">
+        <img src="Images/ToyotaRAV4.jpg" alt="Voiture de luxe" />
+      </div>
+      <div id="welcome-message">
+        <span id="typing-text"></span>
+      </div>
+    </section>
+
+    <section id="vehicules">
+      <h2>Nos Véhicules Disponibles</h2>
+
+      <div class="filter-buttons">
+        <button onclick="filterCars('all')">Tous</button>
+        <button onclick="filterCars('vente')">Vente</button>
+        <button onclick="filterCars('location')">Location</button>
+      </div>
+
+      <div class="car-list">
+        <div class="car-card vente">
+          <img src="Images/AudiQ4.jpg" alt="Audi Q4" />
+          <h3>Audi Q4</h3>
+          <p>Type : Vente</p>
+          <p>Prix : 22 000 000 FCFA</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card location">
+          <img src="Images/ToyotaCHR.jpg" alt="Toyota CHR" />
+          <h3>Toyota CHR</h3>
+          <p>Type : Location</p>
+          <p>Prix : 25 000 FCFA / jour</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card vente">
+          <img src="Images/MercoRaz.jpg" alt="Mercedes Brabus" />
+          <h3>Mercedes Brabus</h3>
+          <p>Type : Vente</p>
+          <p>Prix : 60 500 000 FCFA</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card location">
+          <img src="Images/ToyotaB.jpg" alt="Toyota Land cruiser" />
+          <h3>Toyota LandCruiser</h3>
+          <p>Type : Location</p>
+          <p>Prix : 45 000 FCFA / jour</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card vente">
+          <img src="Images/ToyotaRAV4.jpg" alt="Toyota RAV4" />
+          <h3>Toyota RAV4</h3>
+          <p>Type : vente</p>
+          <p>Prix : 40 000 000 FCFA</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card location">
+          <img src="Images/NissanPatrol.jpg" alt="Toyota Nissan Patrol" />
+          <h3>Toyota Nissan Patrol</h3>
+          <p>Type : Location</p>
+          <p>Prix : 40 000 FCFA / jour</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card vente">
+          <img src="Images/FordZ.jpg" alt="Ford Raptor" />
+          <h3>Ford Raptor</h3>
+          <p>Type : vente</p>
+          <p>Prix : 55 000 000 FCFA</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card location">
+          <img src="Images/RangeRoverB.jpg" alt="Range Rover Evoque" />
+          <h3>Range Rover Evoque</h3>
+          <p>Type : Location</p>
+          <p>Prix : 40 000 FCFA / jour</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card vente">
+          <img src="Images/JeepWrangler.jpg" alt="Jeep Wrangler" />
+          <h3>Jeep Wrangler</h3>
+          <p>Type : vente</p>
+          <p>Prix : 38 000 000 FCFA</p>
+          <button>Voir plus</button>
+        </div>
+
+        <div class="car-card vente">
+          <img src="Images/HondaCRV.jpg" alt="Honda CRV" />
+          <h3>Honda CRV</h3>
+          <p>Type : Vente</p>
+          <p>Prix : 48 000 000 FCFA</p>
+          <button>Voir plus</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS  -->
+    <section id="testimonials">
+      <h2>Ce que disent nos clients</h2>
+
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <img src="Images/client1.jpg" alt="Client 1" />
+          <p>
+            “Service impeccable ! Véhicule propre et confortable. Je recommande
+            Super Auto.”
+          </p>
+          <span>– Awa, Bamako</span>
+          <div class="stars">★★★★★</div>
+        </div>
+
+        <div class="testimonial">
+          <img src="Images/client2.webp" alt="Client 2" />
+          <p>
+            “J'ai loué une voiture pour 5 jours, tout s’est super bien passé.”
+          </p>
+          <span>– Idrissa, Kalaban Coura</span>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+        <div class="testimonial">
+          <img src="Images/client3.jpg" alt="Client 3" />
+          <p>“Des prix imbattables et un accueil chaleureux. Merci !”</p>
+          <span>– Mariam, Sogoniko</span>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="testimonial">
+          <img src="Images/client1.avif" alt="Client 3" />
+          <p>
+            “Endroit magnifique jolie avec de decores qui part avec et des
+            vehicule super. Merci !”
+          </p>
+          <span>– Momo, Banakabougou</span>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Témoignages de nos clients</h2>
+      <div class="testimonial">
+        <p>“Service rapide et voiture impeccable !”</p>
+        <span>– Amadou, Bamako</span>
+      </div>
+      <div class="testimonial">
+        <p>“Très satisfait, je recommande à 100%.”</p>
+        <span>– Awa, Kalaban Coura</span>
+      </div>
+    </section>
+
+    <!-- SECTION ABOUT  -->
+    <section id="about">
+      <h2>À propos de Super Auto de Bamako</h2>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Super Auto de Bamako est une entreprise spécialisée dans la vente et
+            la location de véhicules neufs et d’occasion à Bamako. Depuis
+            plusieurs années, nous mettons un point d'honneur à offrir un
+            service rapide, sécurisé et de qualité à nos clients.
+          </p>
+          <p>
+            Notre mission est de faciliter l'accès à un véhicule fiable et
+            abordable pour chaque malien, que ce soit pour un besoin personnel
+            ou professionnel.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="Images/garage.jpg" alt="Garage Super Auto" />
+        </div>
+      </div>
+
+      <div class="services">
+        <h3>Nos Services</h3>
+        <div class="service-list">
+          <div class="service">
+            <i class="fas fa-car"></i>
+            <h4>Vente de Véhicules</h4>
+            <p>Des voitures de qualité, révisées et prêtes à rouler.</p>
+          </div>
+          <div class="service">
+            <i class="fas fa-key"></i>
+            <h4>Location</h4>
+            <p>À la journée ou à la semaine, avec ou sans chauffeur.</p>
+          </div>
+          <div class="service">
+            <i class="fas fa-tools"></i>
+            <h4>Entretien</h4>
+            <p>Révision complète, vidange, freins, pneus…</p>
+          </div>
+          <div class="service">
+            <i class="fas fa-user-tie"></i>
+            <h4>Conseil</h4>
+            <p>Besoin d’aide pour choisir ? On vous accompagne.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT  -->
+    <section id="contact">
+  <h2>Contactez-nous</h2>
+
+  <div class="contact-container">
+    <form id="contact-form">
+      <label for="name">Nom complet</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Adresse email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Votre message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Nos coordonnées</h3>
+      <p><strong>Adresse :</strong> Quartier Magnambougou Faso Kanu, Bamako</p>
+      <p><strong>Téléphone :</strong> +223 76 00 00 00</p>
+      <p><strong>Email :</strong> contact@superauto.ml</p>
+
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <div class="social-links">
+  <a href="https://www.facebook.com/61575286926629" target="_blank" aria-label="Page Facebook">
+    <i class="fab fa-facebook-square"></i>
+  </a>
+  <a href="https://www.instagram.com/superauto_auto/" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <!-- Ajouter d'autres liens si disponibles -->
+</div>
+</section>
+
+<!-- FOOTER  -->
+ <footer id="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Super Auto de Bamako</h4>
+      <p>Vente et location de véhicules neufs et d'occasion à Bamako.</p>
+      <p>Adresse : Magnambougou Faso Kanu</p>
+      <p>Téléphone : +223 76 00 00 00</p>
+      <p>Email : contact@superauto.ml</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#vehicules">Nos Véhicules</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Suivez-nous</h4>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/61575286926629" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.instagram.com/superauto_auto/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Super Auto de Bamako. Tous droits réservés.</p>
+    <a href="#">Mentions légales</a>
+  </div>
+</footer>
+
+
+
+    <!-- Leaflet.js pour carte -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  const map = L.map('map').setView([12.6392, -8.0029], 13); // Coordonnées approximatives de Bamako
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker([12.6392, -8.0029])
+    .addTo(map)
+    .bindPopup("Super Auto de Bamako")
+    .openPopup();
+</script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
