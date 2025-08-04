@@ -68,3 +68,21 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
       console.error(error);
     });
 });
+
+// NAVBAR 
+const menuToggle = document.getElementById("menu-toggle");
+const navbarLinks = document.getElementById("navbar-links");
+
+menuToggle.addEventListener("click", () => {
+  navbarLinks.classList.toggle("show");
+
+  const icon = menuToggle.querySelector("i");
+  if (navbarLinks.classList.contains("show")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times"); // croix
+  } else {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars"); // hamburger
+  }
+});
+
